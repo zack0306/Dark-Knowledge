@@ -10,7 +10,7 @@
 
 // For target = 6, return -1.
 
-const lastPosition =  (nums, target) => {
+const lastPosition = (nums, target) => {
   let position = -1;
   if (nums === null || nums.length === 0) return position;
   let i = 0;
