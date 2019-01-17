@@ -7,11 +7,13 @@ const swap = (arr, i, j) => {
 const partition = (arr, left, right) => {
   // need fix the pivat at beginnng incase the array is swapping
   const pivot = arr[Math.floor((left + right) / 2)];
+  // need left <= right
   while (left <= right) {
-    while (arr[left] < pivot) {
+    // dont arr[left] <= pivot 
+    while (left <= right && arr[left] < pivot) {
       left ++;
     }
-    while (arr[right] > pivot) {
+    while (left <= right && arr[right] > pivot) {
       right--;
     }
     if (left <= right) {
