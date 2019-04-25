@@ -1,6 +1,6 @@
 const matchedList = [];
 
-autoFill(document.getElementById('myInput'),);
+autoFill(document.getElementById('myInput'));
 
 const autoFill = (input) => {
   input.addEventListener('input', (event) => {
